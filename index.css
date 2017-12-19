@@ -1,0 +1,176 @@
+ @charset "utf-8";
+  body {
+  font-family:'Dancing Script';
+  background-color:#02010a;
+  }
+  img {
+  box-shadow:2px 2px 2px #02010a;
+  border:1px black solid;
+  }
+  #contenido {
+  width:900px;
+  margin:auto;
+  }
+  
+  /* Inicio Cabecera */
+  
+  header {
+  animation-name:slidein;
+  animation-duration:1s;
+  }
+  @keyframes slidein {
+  0% {
+  margin-top:150%;
+  }
+  60% {
+  margin-top:-5%;
+  }
+  100% {
+  margin-top:0
+  }
+  }
+  #cabecera-2 {
+  display:flex;
+  justify-content:space-between;
+  background-color:#5b7989;
+  border-radius:10px 10px 0 0;
+  }
+  #titulo {
+  color:white;
+  text-shadow:2px 2px #02010a;
+  width:40%;
+  }
+  #titulo h1 {
+  margin-left:2%
+  }
+  #menu-3 {
+  display:flex;
+  align-items:center;
+  list-style-type:none;
+  padding:0;
+  }
+  #menu-3 li {
+  margin:10px;
+  }
+  #menu-3 a {
+  color:white;
+  }
+  
+  /* Fin cabecera */
+  
+  /* Inicio Imagen Central */
+  
+  #imagen-central-1 {
+  display:flex;
+  background-color:#82c3a6;
+  }
+  #div-centrar-1 {
+  width:60%;
+  margin:auto;
+  }
+  #centrar-1 {
+  max-width:60%;
+  height:auto;
+  margin-left:20%;
+  margin:-right:20%;
+  margin-top:10%;
+  margin-bottom:10%;
+  }
+  
+  /* Fin Imagen Central */
+  
+  /* Imagen Secundaria */
+  
+  #imagen-secundaria-2 {
+  display:flex;
+  background-color:#d5c75f;
+  }
+  #contsecundario {
+  display:flex;
+  }
+  #contsecundario #imagen1, #imagen2 {
+  margin:5%;
+  text-align:center;
+}
+  .imtimg {
+  max-width:70%;
+  height:auto;
+  }
+  #imagen1 img:hover {
+  transform:rotate(10deg);
+  box-shadow:2px 2px 2px #82c3a6;
+  }
+  #imagen2 img:hover {
+  transform:translate(20px, 5px);
+  box-shadow:2px 2px 2px #82c3a6;
+  }
+  
+  
+  /* Fin Imagen Secundaria */
+  
+  /* Pie de Página */
+  
+  #pie-de-pagina {
+  display:flex;
+  background-color:#C6d5c5;
+  border-radius:0 0 10px 10px;
+  }
+  .itemspie {
+  width:25%;
+  }
+  .itemspie h2,p,li {
+  text-align:center;
+  }
+  .itemspie li {
+  list-style-type:none;
+  }
+  .itemspie ul {
+  padding:0;
+  }
+  
+  /* Fin de Pie de Página */
+  
+  /* Media Queries */
+  
+  @media (max-width:940px) {
+  #contenido {
+  width:auto;
+  }
+  #cabecera-2 {
+  flex-direction:column;
+  }
+  #titulo {
+  color:white;
+  text-shadow:2px 2px #02010a;
+  width:100%;
+  }
+  #titulo h1 {
+  margin:auto;
+  text-align:center;
+  }
+  #menu-3 {
+  width:60%;
+  margin:auto;
+  }
+  #menu-3 li {
+  margin:4% auto;
+  }
+  #contsecundario {
+  display:flex;
+  flex-direction:column;
+  }
+  #pie-de-pagina {
+  flex-direction:column;
+  }
+  #contsecundario {
+  margin:auto;
+  }
+  .itemspie {
+  width:100%;
+  }
+  #contsecundario #imagen1, #imagen2 {
+  margin:5% auto;
+  width:55%;
+  }
+  }
+  /* Fin de Media Queries */

@@ -1,0 +1,173 @@
+  @charset "utf-8";
+  body {
+  font-family:'Dancing Script';
+  background-color:#02010a;
+  }
+  img {
+  box-shadow:2px 2px 2px #02010a;
+  }
+  #contenido {
+  width:900px;
+  margin:auto;
+  }
+  
+  /* Inicio Cabecera */
+  
+  header {
+  animation-name:slidein;
+  animation-duration:1s;
+  }
+  @keyframes slidein {
+  0% {
+  margin-top:150%;
+  }
+  60% {
+  margin-top:-5%;
+  }
+  100% {
+  margin-top:0;
+  }
+  }
+  #cabecera-2 {
+  display:flex;
+  justify-content:space-between;
+  background-color:#5b7989;
+  border-radius:10px 10px 0 0;
+  }
+  #titulo {
+  color:white;
+  text-shadow:2px 2px #02010a;
+  width:55%;
+  }
+  #titulo h1 {
+  margin-left:2%;
+  }
+  #menu-3 {
+  display:flex;
+  align-items:center;
+  list-style-type:none;
+  padding:0;
+  }
+  #menu-3 li {
+  margin:10px;
+  }
+  #menu-3 a {
+  color:white;
+  }
+  
+  /* Fin cabecera */
+  
+ /* Galería */
+ 
+ #galeria {
+ display:flex;
+ background-color:#d5c75f;
+ }
+ .items {
+ width:30%;
+ margin:auto;
+ }
+ 
+ .items img {
+ max-width:80%;
+ height:auto;
+ margin:10%;
+ }
+ .blur {
+ filter:blur(10px);
+ }
+ .escala-grises {
+ filter:grayscale(100%);
+ }
+ .sepia {
+ filter:sepia(90%);
+ }
+ 
+ /* Fin de la Galería */
+   
+  /* Pie de Página */
+  
+  #pie-de-pagina {
+  display:flex;
+  background-color:#C6d5c5;
+  border-radius:0 0 10px 10px;
+  }
+  .itemspie {
+  width:25%;
+  }
+  .itemspie h2,p,li {
+  text-align:center;
+  }
+  .itemspie li {
+  list-style-type:none;
+  }
+  .itemspie ul {
+  padding:0;
+  }
+  .imagen-1 {
+  filter:blur(10px);
+  }
+  .imagen-2 {
+  filter:grayscale(100%);
+  }
+  .imagen-3 {
+  filter:grayscale(100%);
+  }
+  .imagen-5 {
+  filter:sepia(90%);
+  }
+  .imagen-6 {
+  filter:grayscale(100%);
+  }
+  
+  /* Fin de Pie de Página */
+  
+  /* Media Queries */
+  
+  @media (max-width:945px) {
+  #galeria {
+  flex-direction:column;
+  }
+  .items {
+   width:50%;
+  }
+  #contenido {
+  width:auto;
+  }
+  #cabecera-2 {
+  flex-direction:column;
+  }
+  #titulo {
+  color:white;
+  text-shadow:2px 2px #02010a;
+  width:100%;
+  }
+  #titulo h1 {
+  margin:auto;
+  text-align:center;
+  }
+  #menu-3 {
+  width:60%;
+  margin:auto;
+  }
+  #menu-3 li {
+  margin:4% auto;
+  }
+  #pie-de-pagina {
+  flex-direction:column;
+  }
+  .itemspie {
+  width:100%;
+  }
+  .imagen-3 {
+  filter:sepia(90%);
+  }
+  .imagen-4 {
+  filter:grayscale(100%);
+  }
+  .imagen-5 {
+  filter:none;
+  }
+  }
+  
+  /* Fin de Media Queries */
